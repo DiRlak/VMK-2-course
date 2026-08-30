@@ -12,7 +12,7 @@ int str_cmp(const void *a, const void *b); // sorting array of strings
 
 int main() {
     char *str;         // reserved string
-    char **mas = NULL; // array of strigs
+    char **mas = NULL; // array of strings
     int size = 0;      // amount of strings in array
     
     str = str_in();
