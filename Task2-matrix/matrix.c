@@ -22,7 +22,7 @@ int init_mtrx(matrix *mtrx, const int n, const int m) {
 
 int outp_mtrx(const matrix *mtrx) {
     if (mtrx->mtrx == NULL) {
-       printf("Unexisting matrix can not be printed\n");
+       printf("Nonexisting matrix can not be printed\n");
        return -2;
     }
 
@@ -88,7 +88,7 @@ matrix mul_mtrx(const matrix *mtrx1, const matrix *mtrx2) {
     }
 
     if ((mtrx1->mtrx == NULL) || (mtrx2->mtrx == NULL)) {
-        printf("Multipling can not be calculated: one of matrices is not existed\n");
+        printf("Multiplication can not be calculated: one of matrices is not existed\n");
         return tmp;
     }
 
