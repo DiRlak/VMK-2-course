@@ -29,7 +29,7 @@ int main() {
     str_out((const char **)mas, size); // why?
     
     for (int i = 0; i < size; ++i)
-        free(mas[size]);
+        free(mas[i]);
     free(mas);
 
     return 0;
